@@ -116,7 +116,9 @@ Method: GET
 ```
 Request Parameters:
 ```
-    {"page": "<номер страницы>"}
+{
+    "page": "<номер страницы>"
+}
 ```
 Responses:
 ```
