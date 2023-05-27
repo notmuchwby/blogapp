@@ -40,7 +40,7 @@ router.post('/', auth, async (req, res) => {
 
     await newPost.save();
 
-    res.status(201).json({ message: 'Пост был успешно создан' });
+    res.status(201).json({ message: 'Пост был успешно создан', newPost });
   } catch (error) {
     console.log(error, 'error')
     res.status(500).json({ message: 'Не удалось создать пост' });
